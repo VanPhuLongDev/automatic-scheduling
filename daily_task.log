@@ -1,0 +1,13 @@
+2024-06-12 21:19:10,501 - Tác vụ đã được thực thi!
+2024-06-12 21:19:10,501 - Bắt đầu huấn luyện mô hình 1.
+2024-06-12 21:19:15,502 - Huấn luyện mô hình 1 thành công.
+2024-06-12 21:19:15,502 - Bắt đầu huấn luyện mô hình 2.
+2024-06-12 21:19:20,504 - Huấn luyện mô hình 2 thành công.
+2024-06-12 21:33:13,788 - Tác vụ đã được thực thi!
+2024-06-12 21:36:20,939 - Tác vụ đã được thực thi!
+2024-06-12 21:36:20,939 - Bắt đầu huấn luyện mô hình LightGCN.
+2024-06-12 21:36:20,939 - Lỗi trong quá trình huấn luyện mô hình LightGCN: name 'trainModelLGCN' is not defined
+2024-06-12 21:36:20,941 - Bắt đầu huấn luyện mô hình 2.
+2024-06-12 21:36:25,942 - Huấn luyện mô hình 2 thành công.
+2024-06-12 21:38:30,280 - Tác vụ đã được thực thi!
+2024-06-12 21:38:30,280 - Bắt đầu huấn luyện mô hình LightGCN.
