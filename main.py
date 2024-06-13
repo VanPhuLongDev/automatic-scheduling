@@ -4,6 +4,7 @@ import os
 import logging
 from trainModelLightGCN import train_model_LGCN
 import requests
+from train_convmf_vn import train_model
 
 log_file_path = 'daily_task.log'
 logging.basicConfig(
@@ -55,14 +56,14 @@ def train_model_Light_GCN():
         logging.error(f"Lỗi trong quá trình huấn luyện mô hình LightGCN: {e}")
         print(f"Lỗi trong quá trình huấn luyện mô hình LightGCN: {e}")
 
-def train_model_2():
+def train_model_convmf():
     logging.info("Bắt đầu huấn luyện mô hình 2.")
     print("Bắt đầu huấn luyện mô hình 2.")
     
     try:
         # Giả lập quá trình huấn luyện mô hình với thời gian chạy 5 giây
-        time.sleep(5)
-        
+        # time.sleep(5)
+        train_model()
         logging.info("Huấn luyện mô hình 2 thành công.")
         print("Huấn luyện mô hình 2 thành công.")
     except Exception as e:
@@ -72,13 +73,13 @@ def daily_task():
     logging.info("Tác vụ đã được thực thi!")
     print("Tác vụ đã được thực thi!")
     train_model_Light_GCN()
-    train_model_2()
+    train_model_convmf()
     if os.path.exists(log_file_path):
         print("File log đã được tạo.")
     else:
         print("File log chưa được tạo.")
 
-schedule.every().day.at("21:38").do(daily_task)
+schedule.every().day.at("12:22").do(daily_task)
 
 while True:
     schedule.run_pending()
